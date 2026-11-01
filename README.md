@@ -2,6 +2,12 @@
 
 A reproducible student project exploring product, category, outlet, and location performance with Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Streamlit, and Altair. The project follows the four objectives in the supplied Sapphire IQ brief: understand performance, assess data reliability, identify drivers, and recommend practical actions.
 
+## Open the interactive dashboard
+
+**[Launch the dashboard](https://drviper59.github.io/blinkit-grocery-sales-analysis/)** · [View the GitHub project](https://github.com/drviper59/blinkit-grocery-sales-analysis)
+
+The hosted dashboard offers filters for product, outlet, location, size, and fat content, plus Overview, Products, and Outlets & Signals views. GitHub Pages must be enabled for this repository before the hosted link becomes available. The same Streamlit app is available locally with `streamlit run app.py`.
+
 ## Quick start
 
 ```bash
@@ -48,6 +54,8 @@ Recommendations are framed as hypotheses for follow-up: prioritize replenishment
 
 ```text
 ├── app.py                        # Interactive Streamlit dashboard
+├── docs/                         # Public static dashboard for GitHub Pages
+├── .github/workflows/pages.yml   # GitHub Pages deployment
 ├── .streamlit/config.toml        # Dashboard theme
 ├── data/                         # Provided source workbook
 ├── notebooks/                    # Guided, reproducible analysis
