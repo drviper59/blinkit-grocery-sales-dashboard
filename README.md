@@ -4,9 +4,9 @@ A reproducible student project exploring product, category, outlet, and location
 
 ## Open the interactive dashboard
 
-**[Launch the dashboard](https://drviper59.github.io/blinkit-grocery-sales-analysis/)** · [View the GitHub project](https://github.com/drviper59/blinkit-grocery-sales-analysis)
+**[Launch the interactive dashboard](https://drviper59.github.io/blinkit-grocery-sales-dashboard/)** · [View the GitHub project](https://github.com/drviper59/blinkit-grocery-sales-dashboard)
 
-The hosted dashboard offers filters for product, outlet, location, size, and fat content, plus Overview, Products, and Outlets & Signals views. GitHub Pages must be enabled for this repository before the hosted link becomes available. The same Streamlit app is available locally with `streamlit run app.py`.
+The hosted dashboard offers filters for product, outlet, location, size, and fat content, plus Overview, Products, and Outlets & Signals views. The same Streamlit app is available locally with `streamlit run app.py`.
 
 ## Quick start
 
