@@ -1,6 +1,6 @@
 # BlinkIT Grocery Sales Analysis
 
-A reproducible student project exploring product, category, outlet, and location performance with Python, Pandas, NumPy, Matplotlib, Seaborn, and Jupyter. The project follows the four objectives in the supplied Sapphire IQ brief: understand performance, assess data reliability, identify drivers, and recommend practical actions.
+A reproducible student project exploring product, category, outlet, and location performance with Python, Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Streamlit, and Altair. The project follows the four objectives in the supplied Sapphire IQ brief: understand performance, assess data reliability, identify drivers, and recommend practical actions.
 
 ## Quick start
 
@@ -10,9 +10,16 @@ python -m venv .venv
 # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 jupyter notebook notebooks/blinkit_grocery_sales_analysis.ipynb
+
+# Launch the interactive dashboard
+streamlit run app.py
 ```
 
 The workbook is included at `data/blinkit_grocery_data.xlsx`; the notebook resolves it relative to its own location. Run cells from top to bottom.
+
+## Interactive dashboard
+
+Launch with `streamlit run app.py`. The dashboard provides global filters for product type, outlet type, location tier, size, and fat content. The overview compares category and location totals; the product tab ranks categories and compares sales distributions; the outlet tab shows totals against average sales per record, a visibility relationship view, and an outlet detail table. Use **Reset all filters** in the sidebar to restore the full dataset. Charts support hover details, and all headline measures respond to the selected filters.
 
 ## Data and definitions
 
@@ -40,6 +47,8 @@ Recommendations are framed as hypotheses for follow-up: prioritize replenishment
 ## Project structure
 
 ```text
+├── app.py                        # Interactive Streamlit dashboard
+├── .streamlit/config.toml        # Dashboard theme
 ├── data/                         # Provided source workbook
 ├── notebooks/                    # Guided, reproducible analysis
 ├── src/                          # Reusable loading and cleaning functions
